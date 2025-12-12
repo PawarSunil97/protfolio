@@ -8,7 +8,8 @@ const APP_PASSWORD = process.env.APP_PASSWORD;
 
 // Validate environment variables
 if (!USER_EMAIL || !APP_PASSWORD) {
-  console.error("Missing USER_EMAIL or APP_PASSWORD in .env");
+  console.error("Missing USER_EMAIL or APP_PASSWORD in environment variables");
+  console.error("Please set USER_EMAIL and APP_PASSWORD in Railway environment variables (or .env for local development)");
   process.exit(1);
 }
 
