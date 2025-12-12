@@ -7,8 +7,7 @@
   "test": "echo \"Error: no test specified\" && exit 1",
   "start": "node server.js",
   "server": "nodemon server.js",
-  "build": "npm install && echo '✅ Backend build complete - dependencies installed'",
-  "prebuild": "echo '🔨 Building backend...'",
+  "build": "echo 'No build step needed'",
   "dev": "npm run server",
   "client": "npm start --prefix client"
 },
